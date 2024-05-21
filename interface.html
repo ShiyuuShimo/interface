@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create Meta Data</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Meta Data Input Form</h2>
+            <div id="inputFields">
+                <input type="text" name="title" placeholder="title">
+                <input type="text" name="author" placeholder="author">
+                <input type="text" name="publisher" placeholder="publisher">
+                <input type="text" name="date_pub" placeholder="date_pub">
+            </div>
+            <button onclick="addInputField('author')" >Add author</button>
+            <button onclick="addInputField('translator')" >Add translator</button>
+            <button onclick="addInputField('editor')" >Add editor</button>
+            <button onclick="addInputField('title_jnl');addInputField('volume');addInputField('issue');addInputField('number');addInputField('page');addInputField('issn')" >Add Fields for Journal</button>
+            <button onclick="addInputField('isbn')" >Add isbn</button>
+            <button onclick="addInputField('url')" >Add url</button>
+            <button onclick="addInputField('doi')" >Add doi</button>
+            <button onclick="addInputField('memo')" >Add memo</button>
+            <p/>
+            <button onclick="saveJSONLocally()">Make and Save JSON</button>
+            <!--button onclick="removeInputField()">Delete last form</button-->
+            <pre id="output"></pre>
+        </div>
+
+    <script src="interface.js"></script>
+    </body>
+</html>
